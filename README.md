@@ -31,5 +31,9 @@ ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_
 
 ## Procedures ##
 1. **Data Wrangling**
-   - Filter out entries that start_at later than ended_at
-   - 
+   - Filter out **invalid entries** that started_at later than or equal to ended_at, and I would delete entries from the dataset
+   - Filter out bike duration greater than 12 hours, it might cause by forgetting to lock the bikes accidently
+   - Format data by trimming lag/lng data whitespaces at the beginning and at the end, and round lag/lng to 6 decimals since it's good enough to see a person
+   - Finally, I created a view, formatted_bike_data, with rides under 12 hours, and with correct data format
+2. **Data Analysis**
+   -
