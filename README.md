@@ -38,41 +38,56 @@ ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_
    - Filter out bike duration greater than 12 hours, it might cause by forgetting to lock the bikes accidently
    - Format data by trimming lag/lng data whitespaces at the beginning and at the end, and round lag/lng to 6 decimals since it's good enough to see a person
    - Finally, I created a view, `formatted_bike_data`, with rides under 12 hours, and with correct data format   
-2. **Data Analysis**    (See my code [here]())
+2. **Data Analysis**    (See my code [here](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Data_Analysis.sql))
 
    For this project, we aim to find out what makes casual users want to become an annual member. We're going to study user behavior between casual users and annual members.
-   I'll try to answer questions like:
-   - What's the different between ride duration between casual riders and members?
-   - Is there any seanality trend for the first half of year between casual riders and annual members? by month? by day of week? by hour?
-   - What's the user habits to use 3 different types of bikes between casual and annual members?
-   - Where's the most busy station?
-
+   
+   ***Usage Patterns Analysis***
+      - What's the different between ride duration between casual riders and members?
+      - What's ride duration differ in the member types?
+  
+   ***Seasonal Trend***
+      - Is there any seanality trend for the first half of year between casual riders and annual members?
+  
+   ***Day and Time Analysis***
+      - Identify peak hours and days for annual and casual riders by day of week? by hour?
+  
+   ***Bike Type Preferences***
+      - What's preference for different bike types between casual and annual members?
+  
 ## Data Visualization ##
 After conducting a thorough analysis of the bike-sharing data, a notable trend emerges: **annual members** constitute the majority of rides, accounting for a substantial **65%**. In contrast, **casual users** represent a smaller share, contributing only **35%** of the total rides. 
 
 The figure below shows the **total number of rides** carried out by Cyclistic members and casual riders of the first half year in 2023.
+
 ![Total Trips by Member Type](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Rides_btw_member_type.png)
 
 To learn more about differences between casual riders and annual riders, I want to know how long usually a ride is for the two types of users.
 This below figure shows casual riders’ average trip length is more than annual member rides
+
 ![avg ride length](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Mean_Duration_by_Member_Type.png)
 
 Next, I want to understand **seasonal trend** in user behavior. I would like to identify if there are certain times of the year, of the day of week,
 and of the hour of day when casual or annual users are more likely to use the service.
 This below figure shows for the first half of the year, the peak month of rides for both casual and member is June, and we noticed a upward trend in rides.
 This finding explains people tend to ride more during faborable weather conditions.
+
 ![Monthly trend by member type](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Monthly_Trend_by_Member_Type.png)
 
 Deep dive in the day of week trend, I found that annual members have different user behavior from casual users. In details, annual members tends to ride more on Tuesday,
 Wednesday, and Thursday. And this could due to majority companies have a hybrid work schedule, usually 3 days work from the office and 2 days work from home.
 In contrast, casual riders tend to ride more on weekends than weekdays, and Saturday is the peak day of the week.
+
 ![Day of Week Trend](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Day_of_Week_Trend_by_Member_Type.png)
 
 To substantiate the hypothesis suggesting that annual members exhibit higher ride frequency on weekdays due to commuting, I conducted a detailed ride analysis by hour. This allowed me to discern patterns and trends in the data, specifically focusing on the hours of the day when members are most active.
+
 ![Hourly Trend](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Hourly_Trend_by_Member_Type.png)
+
 From the above figure, we saw annual members show peak bike usage during the morning hours from 8 am to 9 am and in the afternoon from 5 pm to 7 pm. On the other hand, casual members exhibit an upward bike usage from 11am till  6pm, and a downword trend since then. We concluded that during specific hours, annual members have a clear purpose to ride a bike. 
 
 In addition, in order to help inform decisions on marketing campaign strategy and bike fleet management, I did analysis on bike preferences.
 ![Bike Preference](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Bike_Preference.png)
+
 The analysis reveals the electric_bike is preferred choice for both groups, followed closely by by the classic_bike. However, a notable distinction emerges
 with docked_bikes, as they are exclusively used by casual riders, with no annual members utilizing them. 
