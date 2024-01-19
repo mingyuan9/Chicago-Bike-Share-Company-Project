@@ -9,8 +9,8 @@ The director of the marketing team wants to maximize company's profit by convert
 ## Goal ##
 My goal is to design a new marketing campaign to convert riders into annual subscription by providing actionable recommendations,
 backed up with compelling data and data visualizations.
-Casual riders are defined as customers who purchased a single-ride or a full-day pass
-Annual members are defined as customers who purchased annual memberships
+Casual riders are defined as customers who purchased a single-ride or a full-day pass.
+Annual members are defined as customers who purchased annual memberships.
 
 In order to design a marketing strategy to convert more casual users, it's important to ask:
 1. How does user behavior differentiate between casual riders and members?
