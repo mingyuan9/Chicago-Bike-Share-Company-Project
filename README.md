@@ -48,14 +48,31 @@ ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_
    - Where's the most busy station?
 
 ## Data Visualization ##
-After conducting a thorough analysis of the bike-sharing data, a notable trend emerges: **annual members** constitute the majority of rides, accounting for a substantial **67%**. In contrast, **casual users** represent a smaller share, contributing only **32%** of the total rides. 
+After conducting a thorough analysis of the bike-sharing data, a notable trend emerges: **annual members** constitute the majority of rides, accounting for a substantial **65%**. In contrast, **casual users** represent a smaller share, contributing only **35%** of the total rides. 
 
 The figure below shows the **total number of rides** carried out by Cyclistic members and casual riders of the first half year in 2023.
-![Total Trips by Member Type](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/1.Rides_by_member.png)
+![Total Trips by Member Type](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Rides_btw_member_type.png)
 
 To learn more about differences between casual riders and annual riders, I want to know how long usually a ride is for the two types of users.
 This below figure shows casual riders’ average trip length is more than annual member rides
-![avg ride length](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/2.Avg_ride_length.png)
+![avg ride length](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Mean_Duration_by_Member_Type.png)
 
-Next, I want to understand seanality effects on both casual riders and annual members.
+Next, I want to understand **seasonal trend** in user behavior. I would like to identify if there are certain times of the year, of the day of week,
+and of the hour of day when casual or annual users are more likely to use the service.
+This below figure shows for the first half of the year, the peak month of rides for both casual and member is June, and we noticed a upward trend in rides.
+This finding explains people tend to ride more during faborable weather conditions.
+![Monthly trend by member type](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Monthly_Trend_by_Member_Type.png)
 
+Deep dive in the day of week trend, I found that annual members have different user behavior from casual users. In details, annual members tends to ride more on Tuesday,
+Wednesday, and Thursday. And this could due to majority companies have a hybrid work schedule, usually 3 days work from the office and 2 days work from home.
+In contrast, casual riders tend to ride more on weekends than weekdays, and Saturday is the peak day of the week.
+![Day of Week Trend](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Day_of_Week_Trend_by_Member_Type.png)
+
+To substantiate the hypothesis suggesting that annual members exhibit higher ride frequency on weekdays due to commuting, I conducted a detailed ride analysis by hour. This allowed me to discern patterns and trends in the data, specifically focusing on the hours of the day when members are most active.
+![Hourly Trend](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Hourly_Trend_by_Member_Type.png)
+From the above figure, we saw annual members show peak bike usage during the morning hours from 8 am to 9 am and in the afternoon from 5 pm to 7 pm. On the other hand, casual members exhibit an upward bike usage from 11am till  6pm, and a downword trend since then. We concluded that during specific hours, annual members have a clear purpose to ride a bike. 
+
+In addition, in order to help inform decisions on marketing campaign strategy and bike fleet management, I did analysis on bike preferences.
+![Bike Preference](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Bike_Preference.png)
+The analysis reveals the electric_bike is preferred choice for both groups, followed closely by by the classic_bike. However, a notable distinction emerges
+with docked_bikes, as they are exclusively used by casual riders, with no annual members utilizing them. 
