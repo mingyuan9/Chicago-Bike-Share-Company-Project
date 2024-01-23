@@ -97,3 +97,14 @@ The analysis reveals the electric_bike is preferred choice for both groups, foll
 with docked_bikes, as they are exclusively used by casual riders, with no annual members utilizing them. 
 
 ## Recommendations ##
+In order to design a marketing strategy to convert more casual users into members, we've found that:
+1). Casual riders mostly ride during the weekends
+2). Average ride length of casual driver is 1.69 times of that of annual member on each ride
+3). For both casual and annual riders, as the weather is getting better, there's an upward trend seen in the first half of the year
+4). For both casual and annual riders, they prefer classic_bike to other bikes, and also, docked_bikes are only exclusively occupied by casual riders
+
+Based on above observations, we come up with campaigns that:
+1). **Provide various membership program**: instead of providing only 3 types of memberships: one-ride pass, full-day pass and annual members, we should provide more choices. 
+For example: seasonal membership targeting on riders only ride during summer time and fall time, and weekend pass that only allows people to ride on weekends
+2). **Socia Media Awakeness**: We should encourage people to share their riding experience with friends and families on social media by giving them free rides as an incentive
+3). **Pricing Strategy**: We could charge casual riders base on rate/mile since causal riders have more ride lenghth than annaul members , and make them think it's better off just to get an annual membership.
