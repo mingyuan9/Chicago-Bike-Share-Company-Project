@@ -31,6 +31,10 @@ ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_
 3. **Current**: The data is continuous to updata monthly
 4. **Cited**: Yes
 
+## Data Limitation ##
+1. We don't have access to personally indentifiable data, so we couldn't identify if the same rider who rides more than once as a casual rider or a member or which age group is more preferrable to ride a bike.
+2. The datasets have many NULL values in the `start_station_id` and `end_station_id`, especially under electric_bike category, hence it's hard to draw a conclustion of the most visited station by electric_bike riders.
+
 ## Procedures ##
 1. **Data Wrangling**   (See my code [here](https://github.com/mingyuan9/Chicago-Bike-Share-Company-Project/blob/main/Data_Wrangling.sql))
    - Filter out **invalid entries** that started_at later than or equal to ended_at, and delete entries from the dataset
@@ -91,3 +95,5 @@ In addition, in order to help inform decisions on marketing campaign strategy an
 
 The analysis reveals the electric_bike is preferred choice for both groups, followed closely by by the classic_bike. However, a notable distinction emerges
 with docked_bikes, as they are exclusively used by casual riders, with no annual members utilizing them. 
+
+## Recommendations ##
